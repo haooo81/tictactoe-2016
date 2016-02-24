@@ -26,7 +26,7 @@ def humans_move(game_board):
     """
     valid_move = False
     
-    while valid_move == False:
+    while not valid_move:
         move = int(input("Enter a game board position (0 - 8) to make a move: "))
         if move < 0 or move > 8:
             print("Position out of range. Please try again.")
